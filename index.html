@@ -24,6 +24,10 @@
         image.src = objectURL;
         document.body.appendChild(image);
 
+      })
+      .catch(e => {
+        console.log('There has been a problem with your fetch operation: ' + e.message);
+
       });
 
 
